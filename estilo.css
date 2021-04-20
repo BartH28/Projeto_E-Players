@@ -1,5 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* HEADER */
+
+header{
+    background-color: #1E1C21;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 88.21376281112738vw;
+    height: 5.413533834586466vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 24.890190336749633vw;
+    height: 5.56390977443609vh;
+}
+
+.nav_header{
+    height: 4.360902255639098vh;
+    width: 56.442166910688144vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  MAIN  */
+
+.Banner{
+    background: linear-gradient(to right, rgba(105,203,248,1) 0%, rgba(75,201,243,1) 12%, rgba(21,90,125,1) 51%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
+    width: 100vw;
+    position: relative;
+    height: 68.075vh;
+}
+
+.container_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 32.94289897510981vw;
+    top: 5.197657393850659vw;
+}
+
+.container_logo a{
+    margin-top: 47px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 5em;
+    -webkit-text-stroke: 3px black;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.Banner h2{
+    font-size: 1.5625em;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+
+.container_logo a{
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 1.875em;
+    border: 5px solid black;
+    border-radius: 15px;
+    background: transparent;
+    padding: 0px 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imagens{
+    height: 90.22556390977444vh;
+    display: flex;
+}
+
+.keio{
+    width: 40.835vw;
+    height: 68.075vh;
+}
+.ashe{
+    width: 59.278vw;
+    height:  68.075vh;
 }
