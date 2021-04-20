@@ -8,6 +8,10 @@
 
 /* HEADER */
 
+body{
+width: 100vw;
+}
+
 header{
     background-color: #1E1C21;
     height: 15vh;
@@ -108,4 +112,259 @@ h1{
 .ashe{
     width: 59.278vw;
     height:  68.075vh;
+}
+
+.banner_jogos{
+    background-color: black;
+    height: 19.24812030075188vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.banner_como_participar{
+    background-image: url(img/BANNER\ FUNDO.png);
+    height: 72.63157894736842vh;
+    width: 100vw;
+}
+
+.retangulo{
+    background-color: black;
+    clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+    height: 100%;
+    position: relative;
+}
+
+.retangulo h2{
+    color: white;
+}
+
+.retangulo p{
+    color: white;
+    margin-top: 30px;
+    font-size: 0.75em;
+}
+
+.paragrafo{
+    font-family: 'Titillium Web', sans-serif;
+    width: 41.36163982430454vw;
+    height: 54.669vh;
+    margin-left: 67px;
+    padding-top: 154px;
+}
+
+.kayn{
+    position: absolute;
+    top: -41px;
+    left: 464px;
+    width: 50.764vw;
+    height: 73.53383458646617vh; 
+}
+
+.banner_ao_vivo_em_breve{
+    height: 18.045112781954888vh;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco{
+    width: 87.84773060029282vw;
+    height: 12.631578947368421vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+.bloco h2{
+    color: white;
+    font-size: 1.875em;
+}
+
+.bloco img{
+    width: 16.325036603221083vw;
+    height: 11.12781954887218vh;
+}
+
+.barra_separadora{
+    border-right: 2px solid white;
+    background-color: white;
+    width: 2px;
+    height: 92px;
+}
+
+.noticias{
+    background: #1E1C21;
+    display: flex;
+    width: 100vw;  
+}
+
+
+.Notciah2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.875em;
+    color: white;
+    padding: 22px 72px;
+    width: 106px;
+}
+
+article{
+   height: 47.36842105263158vh;
+   width: 16.251830161054173vw;
+   filter: drop-shadow(0px 30px 30px #000000);
+}
+
+.bloco_noticia{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    width: 16.251830161054173vw;
+    height: 25.714285714285715vh;
+    background: linear-gradient(180deg, #2F2F2F 0%, #2E2E2E 33.33%, #232323 65.62%, #000000 90.62%);
+}
+
+.bloco_noticia h3{
+    text-transform: uppercase;
+    font-size: 1.375em;
+    padding-left: 17px;
+}
+
+.bloco_noticia p{
+    padding: 7px 0px 0px 17px;
+    font-size: 0.875em;
+    height: 18.345864661654137vh;
+    width: 14.811vw;
+}
+
+.bloco_artigos{
+    width: 64.928vw;
+    height: 137.4436090225564vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: -5.143vw;
+    margin-top: 87px;
+}
+
+.Proximos_Jogos{
+    width: 35.6390977443609vh;
+    height: 116.173vh;
+    background: linear-gradient(180deg, #020202 1.83%, #111111 9.35%, #313131 15.84%, #2B2B2B 87.43%, #0E0E0E 94.96%, #000000 100%);
+    box-shadow: 15px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(106px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: -17.143vw;
+    margin-top: 88px;
+}
+
+.proxjogos{
+    height: 50px;
+    width: 275px;
+    font-size: 1.875em;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 39px;
+    margin-top: 22px;
+}
+
+.Proximos_Jogos div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Proximos_Jogos img{
+    height: 9.12vh;
+    width: 13.813vw;
+}
+
+.data{
+    padding-top: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+footer h2{
+    text-transform: initial;
+    font-size: 1.375em;
+    
+}
+
+.newsletter{
+    height: 11.428571428571429vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter span{
+    font-size: 0.75em;
+    padding-bottom: 10px;
+}
+
+.boxinput{
+    width:  26.719vw;
+    height: 5.864661654135339vh;
+    display: flex;
+}
+
+.e-mail{
+    width: 50%;
+    height: 100%;
+    border: unset;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+}
+
+.submit{
+    border: unset;
+    width: 30%;
+    height: 100%;
+    background: #4E4E4E;
+    color: white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+::placeholder{
+    color: #B9B4B4;
+    font-size: 24px;
+}
+
+.lista_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 21.698vw;
+    height: 27.36842105263158vh;
+}
+
+li{
+    font-size: 0.625em;  
+}
+
+.redes_sociais{
+    width: 21.719vw;
+    height: 8.721804511278195vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
