@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro de Time</title>
+    <title>Tela de Cadastro do jogador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -18,42 +20,50 @@
                 <a href="#">resultados</a>
                 <a href="#">noticias</a>
             </nav>
-        </div>    
-    </header> 
+        </div>
+    </header>
     <main>
-        <section class="banner_cadastro">
-            <h1>Cadastro de Time</h1>
+        <section class="banner_cadastro_jogador">
+            <h1>Cadastro de Jogador</h1>
         </section>
-        <section class="cadastro">  
-            <div class="form">
+        <section class="cadastro altura">
+            <div class="form altura_cadastro">
                 <form>
-                    <label for="teamname">Nome de Equipe</label>
-                    <input type="text" class="nome_equipe" name="teamname">
-                    <label for="emblema" class="label_2">Emblema</label>
-                    <label for="input_file" class="Btn_img"> Escolher Imagem</label>
-                    <input type="file" class="input_file" name="emblema" id="input_file">
-                    <input type="submit" class="submit_time" value="Cadastrar">
+                    <label for="Playername">Nome do Jogador</label>
+                    <input type="text" class="nome_jogador" name="Playername">
+                    <label for="Email">Email</label>
+                    <input type="email" class="nome_jogador" name="Email">
+                    <label for="Senha">Senha</label>
+                    <input type="password" class="nome_jogador" name="Senha" id="pass">
+                    <label for="teamname" class="select_label">Equipe</label>
+                    <select name="teamname" id="equipes">
+                        <option value="#"></option>
+                        <option value="SENAI_Cytechs">SENAI Cytechs</option>
+                        <option value="Flamengo">Flamengo</option>
+                    </select>
+                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+                        id="olho" class="olho">
+                    <input type="submit" class="submit_jogador margem" value="Cadastrar">
                 </form>
             </div>
-            <h2 class="lista_time_h2">Lista de Times</h2>
+            <h2 class="lista_time_h2">Lista de Jodores</h2>
             <table>
                 <tr>
-                    <th>Nome da Equipe</th>
-                    <th>Emblema</th>
+                    <th>Nome do jogador</th>
+                    <th>Equipe</th>
                 </tr>
                 <tr>
+                    <td>Thiago</td>
                     <td>SENAI Cytechs</td>
-                    <td><img src="img/FLA 1.png" alt="logo_do_flamengo"></td>
                 </tr>
                 <tr>
-                    <td>Flamengo</td>
-                    <td><img src="img/FLA 1.png" alt="logo_do_flamengo"></td>
+                    <td>Odirlei</td>
+                    <td>SENAI Cytechs</td>
                 </tr>
             </table>
         </section>
     </main>
     <footer>
-        
         <div class="lista_footer">
             <div class="hoho">
                 <h2>Links Úteis</h2>
@@ -76,12 +86,12 @@
             </div>
         </div>
         <img src="img/LOGO.png" alt="" class="logo_footer">
-        
+
         <div class="bloco_direita_footer">
             <div class="newsletter">
                 <span>Faça parte do nosso clan, assine nossa newsletter!</span>
                 <div class="boxinput">
-                    <input type="email" class="e-mail" placeholder="E-mail"/>
+                    <input type="email" class="e-mail" placeholder="E-mail" />
                     <input type="submit" value="Cadastrar" class="submit">
                 </div>
             </div>
@@ -92,6 +102,22 @@
                 <img src="img/youtube 1.png" alt="Logo do youtube">
             </div>
         </div>
-    </footer>   
+    </footer>
+
+    <script>
+        document.getElementById('olho').addEventListener('mousedown', function () {
+            document.getElementById('pass').type = 'text';
+        });
+
+        document.getElementById('olho').addEventListener('mouseup', function () {
+            document.getElementById('pass').type = 'password';
+        });
+
+        
+        document.getElementById('olho').addEventListener('mousemove', function () {
+            document.getElementById('pass').type = 'password';
+        });
+    </script>
 </body>
+
 </html>

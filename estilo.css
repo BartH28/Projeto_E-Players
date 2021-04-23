@@ -15,7 +15,7 @@ width: 100vw;
 header{
     background-color: #1E1C21;
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,10 +51,12 @@ header{
 
 /*  MAIN  */
 
+main{
+    width: 100%;
+}
+
 .Banner{
-    background: linear-gradient(to right, rgba(105,203,248,1) 0%, rgba(75,201,243,1) 12%, rgba(21,90,125,1) 51%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
-    width: 100vw;
-    position: relative;
+    background: linear-gradient(to right, rgba(105,203,248,1) 0%, rgba(75,201,243,1) 0%, rgba(21,90,125,1) 27%, rgba(0,0,0,1) 63%, rgba(0,0,0,1) 100%);    position: relative;
     height: 68.075vh;
 }
 
@@ -120,13 +122,13 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .banner_como_participar{
     background-image: url(img/BANNER\ FUNDO.png);
     height: 72.63157894736842vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .retangulo{
@@ -165,7 +167,7 @@ h1{
 .banner_ao_vivo_em_breve{
     height: 18.045112781954888vh;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +203,7 @@ h1{
 .noticias{
     background: #1E1C21;
     display: flex;
-    width: 100vw;  
+    width: 100%;  
 }
 
 
@@ -300,7 +302,8 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    object-fit: cover;
 }
 
 footer h2{
@@ -376,12 +379,16 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px white solid;
 }
 
 .cadastro{
     background: #1E1C21;
     width: 100%;
+    height: 779px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .form{
@@ -398,13 +405,32 @@ li{
 form{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 58px 98px;
 }
 
-/* .nome_equipe{
+.nome_equipe{
+    width:  42.09370424597365vw;
+    height: 4.587155963302752vh;
+    background: #ABABAB;
+    border: none;
+    margin-top: 10px;
+}
 
-} */
+input[type="file"] {
+    width: 146px;
+    height: 30px;
+    padding-bottom: 80px;
+}
 
-.submit_time{
+.label_2{
+    padding-top: 49px;
+    padding-bottom: 5px;
+}
+
+.submit_time {
+    margin-top: 50px;
+    margin-left: 150px;
     background-color: #001F70;
     border-radius: 10px;
     border: none;
@@ -414,4 +440,117 @@ form{
     text-transform: uppercase;
     font-size: 1.1875em;
     font-family: 'Roboto', sans-serif;
+}
+
+.input_file{
+    display: none;
+}
+
+.Btn_img{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    width: 146px;
+    height: 30px;
+    background: #ABABAB;
+    padding: 2px 7px;
+    width: 170px;
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px white solid;
+    width: 770px;
+    height: 175px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+th{
+    background: black;
+    height: 60px;
+    border-bottom: 2px white solid;
+    padding-left: 22px;
+}
+
+td{
+    padding-left: 22px; 
+}
+
+.lista_time_h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 2.5em;
+}
+
+body{
+    width: 100%;
+}
+
+
+.banner_cadastro_jogador{
+    background-image: url(img/Banner_jogador.png);
+    height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.altura{
+    height: 1110px;
+}
+
+.altura_cadastro{
+    height: 629px;
+}
+
+.nome_jogador{
+    width:  42.09370424597365vw;
+    height: 4.587155963302752vh;
+    background: #ABABAB;
+    border: none;
+    margin-top: 10px;
+}
+
+.submit_jogador {
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color: #C31616;
+    border-radius: 10px;
+    border: none;
+    height: 6.116207951070336vh;
+    width: 18.814055636896047vw;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1875em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.margem{
+    margin-top: 91px;
+}
+
+.select_label{
+    margin-top: 160px;
+}
+
+#equipes{
+    width:  42.09370424597365vw;
+    height: 4.587155963302752vh;
+    background: #ABABAB;
+    border: none;
+    margin-top: 10px; 
+}
+
+.olho {
+    cursor: pointer;
+    left: 928px;
+    position: absolute;
+    width: 24px;
+    top: 620px;
+}
+
+#pass {
+    padding-right: 20px;
 }
